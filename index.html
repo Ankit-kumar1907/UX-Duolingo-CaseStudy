@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study</title>
+
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+
+<body class="bg-white text-slate-900">
+
+    <div class="container grid grid-cols-4 gap-[60px] max-w-[1100px] mx-auto px-6 py-24 space-y-6">
+
+
+        <aside class="sticky top-[40px] h-fit py-[60px] border-r border-gray-300 ">
+
+            <a href="#" class="text-sm font-bold hover:underline mb-6 block">
+                ← Back to home
+            </a>
+
+            <nav>
+                <ul class="space-y-4">
+
+                    <li class="text-gray-500">
+                        <a href="#overview" class="hover:text-black transition-colors">
+                            01. Overview
+                        </a>
+                    </li>
+
+                    <li class="text-gray-500">
+                        <a href="#problem-statement" class="hover:text-black transition-colors">
+                            02. Problem Statement
+                        </a>
+                    </li>
+
+                    <li class="text-gray-500">
+                        <a href="#initial-observations" class="hover:text-black transition-colors">
+                            03. Initial Observations
+                        </a>
+                    </li>
+
+                    <li class="text-gray-500">
+                        <a href="#key-friction-points" class="hover:text-black transition-colors">
+                            04. Key Friction Points
+                        </a>
+                    </li>
+
+                    <li class="text-gray-500">
+                        <a href="#user-journey-analysis" class="hover:text-black transition-colors">
+                            05. User Journey Analysis
+                        </a>
+                    </li>
+
+                    <li class="text-gray-500">
+                        <a href="#design-hypotheses" class="hover:text-black transition-colors">
+                            06. Design Hypotheses
+                        </a>
+                    </li>
+
+                    <li class="text-gray-500">
+                        <a href="#proposed-solution" class="hover:text-black transition-colors">
+                            07. Proposed Solution
+                        </a>
+                    </li>
+
+                    <li class="text-gray-500">
+                        <a href="#behavioral-retention-strategy" class="hover:text-black transition-colors">
+                            08. Behavioral Retention Strategy
+                        </a>
+                    </li>
+
+                    <li class="text-gray-500">
+                        <a href="#product-constraints" class="hover:text-black transition-colors">
+                            09. Product Constraints
+                        </a>
+                    </li>
+
+                    <li class="text-gray-500">
+                        <a href="#final-reflection" class="hover:text-black transition-colors">
+                            10. Final Reflection
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </aside>
+
+
+        <main class="col-span-3 py-16 px-8 ml-8">
+
+
+            <header class="mb-20">
+
+                <h1 class="text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
+                    A Behavioral UX Analysis of Duolingo
+                </h1>
+
+                <p class="text-xl text-slate-500 mt-6 leading-relaxed max-w-2xl">
+                    Realigning system persistence with user intent through behavioral UX
+                    thinking, learning clarity, and ethical engagement systems.
+                </p>
+
+                <div class="grid grid-cols-3 gap-12 mt-12 pt-12 border-t border-slate-100">
+
+                    <div>
+                        <p class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-2">
+                            Role
+                        </p>
+
+                        <p class="text-slate-700">
+                            UX Research
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-2">
+                            Timeline
+                        </p>
+
+                        <p class="text-slate-700">
+                            3 Weeks (Solo)
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-2">
+                            Core Tech
+                        </p>
+
+                        <p class="text-slate-700">
+                            Figma, HTML/CSS
+                        </p>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <section id="overview" class="mb-24">
+
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                    01. Overview
+                </h2>
+
+                <hr class="border-slate-100 mb-10">
+
+                <div class="space-y-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
+
+                    <p>
+                        Duolingo is one of the most popular language-learning
+                        platforms, known for making education engaging through
+                        gamification. While the platform succeeds at habit
+                        formation, prolonged usage may create friction between
+                        learning clarity and retention-focused mechanics.
+                    </p>
+
+                    <p>
+                        This case study explores how vocabulary accessibility,
+                        emotional engagement, and behavioral design patterns can
+                        affect user retention and long-term learning motivation.
+                    </p>
+
+                </div>
+
+                <div class="flex bg-blue-50 border-l-4 border-blue-600 p-8 rounded-r-lg mt-10">
+
+                    <p class="text-slate-800 text-lg italic">
+                        <span class="font-bold not-italic">
+                            Important Note:
+                        </span>
+
+                        This project is an independent UX exploration based on
+                        personal product usage, behavioral observations, and
+                        publicly available community feedback from platforms such
+                        as Reddit and app reviews. The findings and proposals
+                        are conceptual and not derived from formal user testing
+                        or internal Duolingo research.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <section id="problem-statement" class="mb-24">
+
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                    02. Problem Statement
+                </h2>
+
+                <hr class="border-slate-100 mb-10">
+
+                <div class="space-y-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
+
+                    <p>
+                        Duolingo succeeds at making language learning accessible
+                        and habit-forming through gamification. However,
+                        prolonged usage may create frustration, shallow
+                        comprehension, and emotional disengagement for some
+                        learners.
+                    </p>
+
+                    <p>
+                        This case study explores how retention-focused
+                        interaction patterns can unintentionally interfere with
+                        language understanding and long-term motivation.
+                    </p>
+
+                </div>
+
+                <div class="flex bg-blue-50 border-l-4 border-blue-600 p-8 rounded-r-lg mt-10">
+
+                    <p class="text-slate-800 text-lg italic">
+
+                        <span class="font-bold not-italic">
+                            Key Insight:
+                        </span>
+
+                        Users treat lesson completion not as a technical step,
+                        but as a moment of achievement. Systems that punish
+                        mistakes too harshly during this phase can increase
+                        anxiety and emotional friction.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <section id="initial-observations" class="mb-24">
+
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                    03. Initial Observations
+                </h2>
+
+                <hr class="border-slate-100 mb-10">
+
+                <div class="space-y-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
+
+                    <p>
+                        While learning Japanese on Duolingo, I noticed that
+                        vocabulary was frequently introduced through repetition
+                        and translation matching, but often without enough
+                        contextual explanation.
+                    </p>
+
+                    <div>
+
+                        <p class="italic">
+                            <span class="font-bold not-italic">
+                                For example:
+                            </span>
+                        </p>
+
+                        <ul class="list-disc list-inside mt-3 space-y-2">
+
+                            <li>“koko” → here</li>
+                            <li>“soko” → there</li>
+
+                        </ul>
+
+                    </div>
+
+                    <p>
+                        Although users can memorize these answers through
+                        repetition, many beginners may not fully understand:
+                    </p>
+
+                    <ul class="list-disc list-inside space-y-2 pl-4">
+
+                        <li>usage context</li>
+                        <li>sentence behavior</li>
+                        <li>grammatical role</li>
+                        <li>pronunciation patterns</li>
+
+                    </ul>
+
+                    <p>
+                        This creates a gap between:
+                    </p>
+
+                    <ul class="list-disc list-inside space-y-2 pl-4">
+
+                        <li>answer recognition</li>
+                        <li>actual language comprehension</li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+            <section id="key-friction-points" class="mb-24">
+
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                    04. Key Friction Points
+                </h2>
+
+                <hr class="border-slate-100 mb-10">
+
+                <div class="space-y-16 text-lg text-slate-600 leading-relaxed max-w-2xl">
+
+
+                    <div>
+
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">
+                            A. Limited Contextual Vocabulary Support
+                        </h3>
+
+                        <p>
+                            Words are introduced quickly, but users are not
+                            always given immediate contextual explanations.
+                        </p>
+
+                        <div class="mt-6">
+
+                            <p class="font-bold mb-2 text-slate-900">
+                                Result:
+                            </p>
+
+                            <ul class="list-disc list-inside space-y-2 pl-4">
+
+                                <li>Memorization without understanding</li>
+                                <li>Shallow retention</li>
+                                <li>Confusion during later lessons</li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="max-w-2xl rounded-2xl border border-slate-300 bg-slate-50 p-8 mt-6">
+
+    <p class="text-xl font-bold text-slate-900 mb-6">
+        Context Card
+    </p>
+
+    <div class="space-y-5 text-slate-700">
+
+        <div>
+            <p class="text-2xl font-semibold">
+                koko <span class="text-slate-500">(ここ)</span>
+            </p>
+        </div>
+
+        <div>
+            <p class="text-sm uppercase tracking-wide text-slate-400 mb-1">
+                Meaning
+            </p>
+
+            <p class="text-lg">
+                Here
+            </p>
+        </div>
+
+        <div>
+            <p class="text-sm uppercase tracking-wide text-slate-400 mb-1">
+                Usage
+            </p>
+
+            <p class="text-lg">
+                Refers to a location near the speaker.
+            </p>
+        </div>
+
+        <div>
+            <p class="text-sm uppercase tracking-wide text-slate-400 mb-1">
+                Example
+            </p>
+
+            <p class="text-lg italic">
+                “Koko wa gakkou desu.”
+            </p>
+
+            <p class="text-lg">
+                → “This is a school.”
+            </p>
+        </div>
+
+        <div>
+            <p class="text-sm uppercase tracking-wide text-slate-400 mb-1">
+                Grammar
+            </p>
+
+            <p class="text-lg">
+                Noun / Location Marker
+            </p>
+        </div>
+
+    </div>
+
+</div>
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">
+                            B. Slow Perceived Progress
+                        </h3>
+
+                        <p>
+                            Although lessons are intentionally repetitive for
+                            reinforcement, some learners feel their progress is
+                            slow after completing multiple modules.
+                        </p>
+
+                        <p class="mt-4">
+                            For some users, repeated failure creates:
+                        </p>
+
+                        <ul class="list-disc list-inside space-y-2 pl-4 mt-4">
+
+                            <li>anxiety</li>
+                            <li>rushed answering</li>
+                            <li>emotional frustration</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="mt-10">
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">
+                            C. Punishment-Oriented Gamification
+                        </h3>
+                        <p>
+                            The “hearts/lives” system introduces pressure during mistakes.
+                        </p>
+                        <p class="mt-4">
+                            For some users, repeated failure creates:
+                        </p>
+
+                        <ul class="list-disc list-inside space-y-2 pl-4 mt-4">
+                            <li>anxiety</li>
+                            <li>rushed answering</li>
+                            <li>emotional frustration</li>
+                        </ul>
+
+                        <p class="mt-4">
+                            rather than curiosity-driven learning.
+                        </p>
+
+                        <p class="font-semibold mt-6">
+                            Observation
+                        </p>
+                        <p>
+                            Gamification improves engagement for some users, but highly competitive mechanics may
+                            negatively affect others.
+                        </p>
+                    </div>
+
+                    <div class="mt-10">
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">
+                            D. Limited Speaking Reinforcement
+                        </h3>
+                        <p>
+                            Speaking practice exists, but conversational reinforcement remains limited compared to
+                            real-world interaction.
+                        </p>
+                        <p class="mt-4">
+                            However, solving this fully would require:
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 pl-4 mt-4">
+                            <li>social interaction systems</li>
+                            <li>real-time communication</li>
+                            <li>advanced conversational feedback</li>
+                        </ul>
+                        <p class="mt-4">
+                            which falls outside the scope of this case study.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="user-journey-analysis">
+                <h2 class="text-3xl font-bold">05. User Journey Analysis</h2>
+                <hr class="border-slate-100 mb-10 mt-4">
+
+                <div class="grid grid-cols-2 gap-4 text-sm md:text-base">
+                    <div class="font-semibold text-slate-900">Stage</div>
+                    <div class="font-semibold text-slate-900">User Emotion</div>
+                    <div class="rounded-lg bg-slate-50 p-4">Curiosity</div>
+                    <div class="rounded-lg bg-slate-50 p-4">Excited to learn a new language</div>
+                    <div class="rounded-lg bg-slate-50 p-4">First Lessons</div>
+                    <div class="rounded-lg bg-slate-50 p-4">Encounters unfamiliar vocabulary</div>
+                    <div class="rounded-lg bg-slate-50 p-4">Confusion</div>
+                    <div class="rounded-lg bg-slate-50 p-4">Unsure why words are correct</div>
+                    <div class="rounded-lg bg-slate-50 p-4">Failure Loop</div>
+                    <div class="rounded-lg bg-slate-50 p-4">Loses hearts during mistakes</div>
+                    <div class="rounded-lg bg-slate-50 p-4">Pressure</div>
+                    <div class="rounded-lg bg-slate-50 p-4">Focus shifts from learning to avoiding failure</div>
+                    <div class="rounded-lg bg-slate-50 p-4">Disengagement Risk</div>
+                    <div class="rounded-lg bg-slate-50 p-4">User considers quitting</div>
+                </div>
+            </section>
+
+            <section id="design-hypotheses" class="mb-24 mt-25">
+
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                    06. Design Hypotheses
+                </h2>
+
+                <hr class="border-slate-100 mb-10">
+
+                <div class="space-y-12 text-lg text-slate-600 leading-relaxed max-w-2xl">
+
+                    <div>
+                        <p class="italic bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg text-slate-800">
+                            What if Duolingo reduced comprehension friction before increasing performance pressure?
+                        </p>
+
+                        <p class="mt-6">
+                            Instead of prioritizing challenge immediately, the system could focus on foundational
+                            understanding to improve long-term learning outcomes.
+                        </p>
+
+                        <ul class="list-disc list-inside space-y-2 pl-4 mt-4">
+                            <li>Strengthen vocabulary understanding with contextual examples</li>
+                            <li>Reduce cognitive pressure during early onboarding</li>
+                            <li>Provide contextual reinforcement and immediate explanations</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="proposed-solution" class="mb-28">
+
+    <!-- Section Title -->
+    <h2 class="text-3xl font-bold text-slate-900 mb-6">
+        07. Proposed Solution
+    </h2>
+
+    <hr class="border-slate-100 mb-10">
+
+    <!-- Main Content -->
+    <div class="space-y-20 text-lg text-slate-600 leading-relaxed max-w-2xl">
+
+        <!-- A -->
+        <div>
+
+            <h3 class="text-2xl font-semibold text-slate-900 mb-5">
+                A. Contextual Vocabulary Cards
+            </h3>
+
+            <p>
+                When a new word is introduced, users can tap it to view a
+                contextual learning card containing:
+            </p>
+
+            <ul class="list-disc list-inside space-y-3 pl-4 mt-6">
+
+                <li>definition</li>
+                <li>example sentences</li>
+                <li>pronunciation guidance</li>
+                <li>grammatical role</li>
+
+            </ul>
+
+            <p class="mt-6">
+                This provides immediate context and reinforces understanding
+                rather than memorization alone.
+            </p>
+
+            <!-- Mockup Wrapper -->
+            <div class="mt-10 mb-20">
+
+                <!-- Mockup Card -->
+                <div class="max-w-2xl rounded-2xl border border-slate-300 bg-slate-50 p-8">
+
+                    <p class="text-xl font-bold text-slate-900 mb-8">
+                        Context Card
+                    </p>
+
+                    <div class="space-y-6 text-slate-700">
+
+                        <!-- Word -->
+                        <div>
+
+                            <p class="text-2xl font-semibold">
+                                koko
+                                <span class="text-slate-500 font-normal">
+                                    (ここ)
+                                </span>
+                            </p>
+
+                        </div>
+
+                        <!-- Meaning -->
+                        <div>
+
+                            <p class="text-sm uppercase tracking-wide text-slate-400 mb-2">
+                                Meaning
+                            </p>
+
+                            <p class="text-lg">
+                                Here
+                            </p>
+
+                        </div>
+
+                        <!-- Usage -->
+                        <div>
+
+                            <p class="text-sm uppercase tracking-wide text-slate-400 mb-2">
+                                Usage
+                            </p>
+
+                            <p class="text-lg">
+                                Refers to a location near the speaker.
+                            </p>
+
+                        </div>
+
+                        <!-- Example -->
+                        <div>
+
+                            <p class="text-sm uppercase tracking-wide text-slate-400 mb-2">
+                                Example
+                            </p>
+
+                            <p class="text-lg italic">
+                                “Koko wa gakkou desu.”
+                            </p>
+
+                            <p class="text-lg mt-1">
+                                → “This is a school.”
+                            </p>
+
+                        </div>
+
+                        <!-- Grammar -->
+                        <div>
+
+                            <p class="text-sm uppercase tracking-wide text-slate-400 mb-2">
+                                Grammar
+                            </p>
+
+                            <p class="text-lg">
+                                Noun / Location Marker
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- B -->
+        <div>
+
+            <h3 class="text-2xl font-semibold text-slate-900 mb-5 ">
+                B. Searchable Vocabulary Hub
+            </h3>
+
+            <p>
+                Accessible from the main navigation, a searchable vocabulary
+                hub allows users to:
+            </p>
+
+            <ul class="list-disc list-inside space-y-3 pl-4 mt-6">
+
+                <li>search English → target language</li>
+                <li>search target language → English</li>
+                <li>revisit difficult vocabulary</li>
+                <li>save vocabulary history</li>
+
+            </ul>
+
+            <p class="mt-6">
+                This bridges Duolingo’s structured learning path with
+                dictionary-like accessibility and improves long-term review.
+            </p>
+
+        </div>
+
+        <!-- C -->
+        <div>
+
+            <h3 class="text-2xl font-semibold text-slate-900 mb-5 pt-10">
+                C. Vocabulary-First Onboarding
+            </h3>
+
+            <p>
+                Instead of immediately forcing matching exercises,
+                users could first:
+            </p>
+
+            <ul class="list-disc list-inside space-y-3 pl-4 mt-6">
+
+                <li>learn core characters and words</li>
+                <li>understand meaning associations</li>
+                <li>build recognition gradually</li>
+
+            </ul>
+
+            <div class="mt-8">
+
+                <p class="font-semibold text-slate-900 mb-3">
+                    Example Learning Flow
+                </p>
+
+                <p class="text-lg">
+                    Letters → Words → Phrase Formation →
+                    Sentence Understanding
+                </p>
+
+            </div>
+
+            <p class="mt-6">
+                This mirrors how many educational systems progressively
+                introduce language comprehension before performance pressure.
+            </p>
+
+        </div>
+
+        <!-- D -->
+        <div>
+
+            <h3 class="text-2xl font-semibold text-slate-900 mb-5 pt-10">
+                D. Reduce Punishment Friction
+            </h3>
+
+            <p>
+                Rather than removing gamification entirely, the system could
+                reduce punishment-heavy mechanics during early learning stages.
+            </p>
+
+            <p class="mt-6">
+                Possible adjustments include:
+            </p>
+
+            <ul class="list-disc list-inside space-y-3 pl-4 mt-6">
+
+                <li>beginner “low-pressure mode”</li>
+                <li>optional unlimited practice lessons</li>
+                <li>softer recovery after repeated mistakes</li>
+
+            </ul>
+
+            <p class="mt-8">
+                Goal: maintain motivation without creating anxiety-driven
+                learning loops.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+            <section class="mb-24">
+
+                <h2 class="text-3xl font-bold mb-6" id="behavioral-retention-strategy">
+                    08. Behavioral Retention Strategy
+                </h2>
+
+                <hr class="border-slate-100 mb-10">
+
+                <div class="space-y-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
+
+                    <p>
+                        The system can analyze:
+                    </p>
+
+                    <ul class="list-disc list-inside space-y-2 pl-4">
+
+                        <li>active learning hours</li>
+                        <li>session duration</li>
+                        <li>lesson completion behavior</li>
+                        <li>drop-off patterns</li>
+
+                    </ul>
+
+                    <p>
+                        Then send reminders during periods users are naturally active.
+                    </p>
+
+                    <div class="border-l-4 border-indigo-300 pl-4 italic text-slate-700">
+
+                        “Duo is trying to order food but needs your help!”
+
+                    </div>
+
+                    <p>
+                        This keeps notifications contextual, emotionally light,
+                        and connected to user progress instead of generic
+                        engagement prompts.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <section id="product-constraints" class="mb-28">
+
+                <h2 class="text-3xl font-bold mb-6">
+                    09. Product Constraints
+                </h2>
+
+                <hr class="border-slate-100 mb-10">
+
+                <div class="space-y-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
+
+                    <p>
+                        This case study intentionally avoids large-scale features such as:
+                    </p>
+
+                    <ul class="list-disc list-inside space-y-3 pl-4">
+
+                        <li>real-time speaking systems</li>
+                        <li>multiplayer interaction</li>
+                        <li>advanced conversational AI</li>
+
+                    </ul>
+
+                    <p>
+                        While these systems could improve language immersion,
+                        implementing them would require significantly more:
+                    </p>
+
+                    <ul class="list-disc list-inside space-y-3 pl-4">
+
+                        <li>infrastructure complexity</li>
+                        <li>moderation systems</li>
+                        <li>speech-processing pipelines</li>
+                        <li>real-time communication architecture</li>
+
+                    </ul>
+
+                    <p>
+                        Instead, this exploration focuses specifically on improving:
+                    </p>
+
+                    <ul class="list-disc list-inside space-y-3 pl-4">
+
+                        <li>learning clarity</li>
+                        <li>retention experience</li>
+                        <li>onboarding psychology</li>
+                        <li>vocabulary accessibility</li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+
+            <section id="final-reflection" class="mb-20">
+
+                <h2 class="text-3xl font-bold mb-6">
+                    10. Final Reflection
+                </h2>
+
+                <hr class="border-slate-100 mb-10">
+
+                <div class="space-y-6 text-lg text-slate-600 leading-relaxed max-w-2xl">
+
+                    <p>
+                        Duolingo succeeds because it transforms education into
+                        habit formation. However, long-term language retention
+                        requires more than repetition and engagement loops alone.
+                    </p>
+
+                    <p>
+                        This case study suggests that balancing gamification with
+                        contextual understanding and emotional comfort may create
+                        a more sustainable learning experience.
+                    </p>
+
+                    <p>
+                        Rather than removing engagement systems entirely, the goal
+                        is to reduce unnecessary cognitive pressure while supporting
+                        curiosity-driven learning.
+                    </p>
+
+                    <!-- Final Insight -->
+                    <div class="border-l-4 border-blue-600 bg-slate-50 p-8 rounded-r-2xl mt-10">
+
+                        <p class="italic text-slate-700 leading-relaxed">
+
+                            <span class="font-semibold not-italic text-slate-900">
+                                Final Insight:
+                            </span>
+
+                            Effective educational UX is not only about keeping users
+                            active — it is about helping them feel capable, confident,
+                            and meaningfully connected to the learning process.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+
+    </div>
+
+</body>
+
+</html>
